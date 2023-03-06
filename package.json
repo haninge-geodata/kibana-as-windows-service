@@ -1,0 +1,30 @@
+{
+  "name": "kibana-as-windows-service",
+  "version": "0.0.1",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/haninge-geodata/kibana-as-windows-service.git"
+  },
+  "description": "NodeJS script for installing Kibana as a Windows service. Configure paths and naming before running.",
+  "keywords": [
+    "haningekommun",
+    "geonetwork",
+    "elasticsearch",
+    "kibana",
+    "windows-service"
+  ],
+  "license": "BSD-2-Clause",
+  "main": "tasks/create_windowsservice.js",
+  "scripts": {
+    "start": "node tasks/create_windowsservice.js"
+  },
+  "dependencies": {
+    "node-windows": "^0.1.14"
+  },
+  "devDependencies": {
+    "eslint": "^7.29.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1"
+  }
+}
